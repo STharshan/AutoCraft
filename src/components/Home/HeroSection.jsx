@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const HeroSection = () => {
     return (
-        <section className="relative w-full h-screen overflow-hidden text-white">
+        <section className="relative w-full h-200 text-white">
             {/* Background Video */}
             <video
                 className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -20,24 +20,27 @@ const HeroSection = () => {
             {/* Centered Content */}
             <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
                 {/* Logo Title */}
-                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-wide">
-                    NIKITA   <span className="text-xs md:text-sm text-gray-300 mt-1 mb-3 uppercase tracking-wide">
+                <div className="flex items-center">
+                    <h1 className="text-5xl md:text-7xl font-extrabold tracking-widest mr-10">
+                        NIKITA
+                    </h1>
+                    <span className="md:text-xl font-bold uppercase tracking-widest">
                         EST. 1992
                     </span>
-                </h1>
+                </div>
 
                 {/* EST */}
-                <p className="text-blue-600 text-4xl md:text-6xl font-extrabold leading-tight tracking-wide mb-7">AUTOCRAFT</p>
+                <p className="text-blue-600 text-5xl md:text-7xl font-extrabold leading-tight tracking-wide mb-7 md:ml-15">AUTOCRAFT</p>
 
                 {/* Services */}
-                <p className="text-sm md:text-base uppercase font-semibold tracking-widest relative inline-block pb-2">
+                <p className="text-sm md:text-xl uppercase font-bold tracking-widest relative inline-block pb-2 ">
                     <span className="absolute -top-2 left-0 w-full h-1 bg-yellow-400 z-0"></span>
-                    <span className="relative z-10">MOT · SERVICE · BODY REPAIRS · RESPRAY</span>
+                    <span className="relative z-10 max-w-2xl">MOT · SERVICE · BODY REPAIRS · RESPRAY</span>
                     <span className="absolute bottom-0 left-0 w-full h-1 bg-yellow-400 z-0"></span>
                 </p>
 
                 {/* Sub Text */}
-                <p className="mt-6 text-sm sm:text-base text-gray-300">
+                <p className="mt-16 text-md sm:text-xl text-gray-300">
                     Your One-Stop Auto Repair Shop
                 </p>
 
@@ -50,16 +53,17 @@ const HeroSection = () => {
                 {/* Badge Row */}
                 <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm">
                     <div className="flex items-center gap-2 font-semibold px-3 py-1 rounded">
-                        <FaArrowRight className='bg-yellow-400 text-black w-7' /> Fast Service
+                        <FaArrowRight className='bg-yellow-400 text-black w-8 h-5' /> Fast Service
                     </div>
                     <div className="flex items-center gap-2 font-semibold px-3 py-1 rounded">
-                        <FaArrowRight className='bg-yellow-400 text-black w-7' /> Quality Care
+                        <FaArrowRight className='bg-yellow-400 text-black w-7 h-5' /> Quality Care
                     </div>
                 </div>
             </div>
+                
             {/* Bottom Info Bar */}
-            <div className="absolute bottom-4 left-0 w-full z-10 px-4">
-                <div className="max-w-xl mx-auto bg-black bg-opacity-70 backdrop-blur-sm rounded-full flex flex-wrap md:flex-nowrap items-center justify-between px-6 py-3 text-white text-sm font-semibold shadow-lg">
+            <div className="absolute left-0 w-full z-10 px-4 bottom-10 border-t border-gray-700 pt-5">
+                <div className="max-w-2xl mx-auto bg-black bg-opacity-70 backdrop-blur-sm rounded-full flex flex-wrap md:flex-nowrap items-center justify-between px-6 py-3 text-white text-sm font-semibold shadow-lg">
 
                     {/* Team Info */}
                     <div className="flex items-center gap-2">

@@ -26,7 +26,7 @@ const PaintWorkSection = () => {
     <section className="bg-white py-20 px-4 text-center relative">
       {/* Title */}
       <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-3">PAINT WORK</h2>
-      <p className="text-gray-500 text-sm sm:text-base max-w-xl mx-auto mb-12">
+      <p className="text-gray-500 text-sm sm:text-base max-w-sm mx-auto mb-12 mt-10">
         Restore your vehicle to its original beauty. We pride ourselves on delivering the highest quality paint services
       </p>
 
@@ -42,7 +42,7 @@ const PaintWorkSection = () => {
               key={index}
               src={src}
               alt={`paint-${index}`}
-              className="w-[250px] h-[180px] object-cover rounded shadow-md flex-shrink-0 hover:scale-105 transition"
+              className="w-[600px] h-[450px] object-cover rounded shadow-md flex-shrink-0 hover:scale-105 transition"
             />
           ))}
         </div>
@@ -71,6 +71,7 @@ const PaintWorkSection = () => {
           <FaArrowRight className="text-yellow-300" />
         </button>
       </div>
+      <div className="absolute left-0 w-full z-10 px-4 mt-20 border-t border-gray-300"></div>
     </section>
   );
 };

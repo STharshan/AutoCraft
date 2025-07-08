@@ -28,7 +28,7 @@ const BodyWorkSection = () => {
                 key={idx}
                 src={src}
                 alt="Coming Soon"
-                className="w-[300px] h-auto object-contain flex-shrink-0"
+                className="w-[500px] h-auto object-contain flex-shrink-0"
               />
             ))}
         </div>

@@ -2,58 +2,70 @@ import React from "react";
 
 const testimonials = [
   {
-    name: "TARVINDER B",
-    text: "Fantastic service. Had my Range Rover serviced by these guys, quick turnaround, good pricing. Will definitely be a repeat customer.",
+    quote:
+      "Got a starlight headliner done from them and it was done quickly and to a high standard. Would highly recommend",
+    author: "EEVAN S",
   },
   {
-    name: "EEVAN S",
-    text: "Got a starlight headliner done from them and it was done quickly and to a high standard. Would highly recommend.",
+    quote:
+      "Toni and his team are lovely. Very friendly and worked well within the timeframe agreed and were very cost-effective. Absolutely recommend this team 👍.",
+    author: "RENOL K",
   },
   {
-    name: "PRIYA D",
-    text: "Superb attention to detail and professionalism. My car looks brand new! Thanks to the team.",
+    quote:
+      "Exceptional service! My car looks as good as new. Highly recommend!",
+    author: "KIRK S",
+  },
+  {
+    quote:
+      "Fantastic service. Had my Range Rover serviced by these guys, quick turn around good pricing. Will definitely be a repeat customer",
+    author: "TARVINDER B",
   },
 ];
 
 const TestimonialsSection = () => {
   return (
-    <section className="bg-white py-16 px-4">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
-        {/* Left Column */}
-        <div className="md:w-1/2 mb-10 md:mb-0">
-          <p className="text-xs tracking-wide text-gray-500 uppercase mb-2 flex items-center">
-            <span className="w-4 h-[1px] bg-lime-400 mr-2"></span> Raving Reviews
+    <section className="w-full bg-white py-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 items-center">
+        {/* Left */}
+        <div>
+          <p className="text-sm font-bold text-gray-500 mb-2 flex items-center">
+            <span className="inline-block w-2 h-px -rotate-45 bg-yellow-400 mr-2 "></span> RAVING REVIEWS
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-600 leading-tight">
-            Thousands of <br /> Happy Drivers
+          <h2 className="text-3xl font-bold text-blue-600 leading-tight mt-15 tracking-widest">
+            THOUSANDS OF <br /> HAPPY DRIVERS
           </h2>
         </div>
 
-        {/* Right Column */}
-        <div className="md:w-1/2 relative">
-          <div className="bg-gray-900 p-6 rounded-lg relative overflow-hidden">
-            {/* Diagonal Lines (simulating your design) */}
-            <div className="absolute w-full h-full top-0 left-0">
-              <div className="absolute border-l border-lime-300 rotate-45 w-[200%] h-[1px] top-1/2 left-[-100%]"></div>
-              <div className="absolute border-l border-lime-300 rotate-45 w-[200%] h-[1px] top-[70%] left-[-100%]"></div>
-            </div>
+        {/* Right */}
+        <div className="relative bg-black overflow-hidden p-4 h-180">
+           <div className="absolute top-0 right-0 h-full w-[15px] bg-gradient-to-b from-transparent to-yellow-400"></div>
 
-            {/* Scrollable testimonials */}
-            <div className="flex space-x-4 overflow-x-auto scroll-smooth no-scrollbar py-2 z-10 relative">
-              {testimonials.map((item, index) => (
-                <div
-                  key={index}
-                  className="min-w-[280px] md:min-w-[320px] bg-white rounded shadow-md px-6 py-4 flex-shrink-0 relative"
-                >
-                  {/* Gradient fade left */}
-                  <div className="absolute left-0 top-0 h-full w-4 bg-gradient-to-r from-black/40 via-white/10 to-transparent rounded-l"></div>
+            {/* Bottom half border */}
 
-                  <p className="text-sm text-gray-800 mb-4">{item.text}</p>
-                  <p className="text-xs font-bold text-gray-900">{item.name}</p>
-                </div>
-              ))}
-            </div>
+          {/* diagonal yellow line */}
+          <div className="absolute border border-yellow-400 transform rotate-315 w-full h-0 top-1/2 left-0"></div>
+          
+          {/* testimonials */}
+          <div className="flex space-x-4 scrollbar-hide relative z-10 mt-70 slider-track">
+            {testimonials.map((t, i) => (
+              <div
+                key={i}
+                className="relative bg-white text-gray-800 p-4 min-w-[500px] shadow"
+              >
+                {/* left gradient */}
+                <div className="absolute left-0 top-0 h-full w-4 bg-gradient-to-r from-black/70 to-transparent"></div>
+                {/* right gradient */}
+                <div className="absolute right-0 top-0 h-full w-4 bg-gradient-to-l from-black/70 to-transparent"></div>
+
+                <p className="text-sm mb-2">"{t.quote}"</p>
+                <p className="text-xs font-bold uppercase text-gray-600">{t.author}</p>
+              </div>
+            ))}
           </div>
+
+          {/* yellow bottom border */}
+          <div className="absolute bottom-0 left-0 w-full h-2 bg-yellow-400"></div>
         </div>
       </div>
     </section>

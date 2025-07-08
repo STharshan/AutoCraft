@@ -35,10 +35,20 @@ const ExpertCrewSection = () => {
       </div>
 
       {/* Center Info Card */}
-      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white border border-gray-200 shadow-lg p-8 text-center z-10 w-[90%] max-w-md">
-        <h3 className="text-xl font-bold mb-2">EXPERT CREW</h3>
-        <p className="text-gray-600 text-sm">Meet the professionals behind our exceptional service.</p>
-        <div className="absolute bottom-0 right-0 w-6 h-6 bg-yellow-300 translate-x-3 translate-y-3 -z-10"></div>
+      
+      <div className="absolute inset-0 flex items-center justify-center z-10 mt-20 px-4">
+        <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 shadow-lg p-6 sm:p-8 text-center">
+        <div className="absolute top-0 right-0 h-full w-[15px] bg-gradient-to-b from-transparent to-yellow-400"></div>
+
+      {/* Bottom fixed half-border */}
+      <div className="absolute bottom-0 left-0 w-full h-[15px] bg-gradient-to-r from-transparent to-yellow-400"></div>
+
+          <h3 className="text-xl sm:text-2xl font-bold mb-2">EXPERT CREW</h3>
+          <p className="text-sm sm:text-base md:text-lg text-gray-600">
+            Meet the professionals behind our
+          </p>
+          <p className='text-sm sm:text-base md:text-lg text-gray-600'>exceptional service.</p>
+        </div>
       </div>
     </section>
   );

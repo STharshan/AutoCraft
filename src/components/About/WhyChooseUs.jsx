@@ -56,7 +56,17 @@ const WhyChooseUs = () => {
             </button>
           </div>
         ))}
+        
       </div>
+      <div className="mb-6 mt-20 inline-flex items-center gap-3 border-1 border-gray-200 rounded-full px-7 py-3 text-sm font-medium">
+                <div className="flex text-yellow-400 space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} size={14} />
+                  ))}
+                </div>
+                <span className="text-black">4.3/5 from</span>
+                <span className="bg-gray-100 rounded-full px-2 py-1 text-gray-400 font-medium">20+ Reviews</span>
+              </div>
     </section>
   );
 };

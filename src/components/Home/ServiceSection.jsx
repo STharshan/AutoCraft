@@ -5,22 +5,22 @@ const services = [
   {
     title: "DENTS/SCRATCHES",
     desc: "Restore your car’s perfect finish. Professional dent removal for a flawless vehicle surface.",
-    image: "/dents.jpg",
+    image: "./bule.avif",
   },
   {
     title: "SMART REPAIR",
     desc: "Cost-effective solution for fixing minor damage. Without the need for extensive replacement or repainting.",
-    image: "/smart.jpg",
+    image: "/carpaint.avif",
   },
   {
     title: "DIAGNOSTICS",
     desc: "Consultive diagnostics – address the root cause of the issue for a lasting solution.",
-    image: "/diagnostics.jpg",
+    image: "/gray.avif",
   },
   {
     title: "ENGINE TUNING",
     desc: "Enhance performance and fuel efficiency with expert engine tuning and diagnostics.",
-    image: "/tuning.jpg",
+    image: "/graypaint.avif",
   },
 ];
 
@@ -69,14 +69,14 @@ const ServiceSection = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="relative min-w-[300px] md:min-w-[350px] h-[420px] rounded shadow-md overflow-hidden group flex-shrink-0"
+                className="relative min-w-[300px] md:min-w-[400px] h-[420px] rounded shadow-md overflow-hidden group flex-shrink-0"
               >
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="absolute inset-0 w-full h-full object-cover"
+                 className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-60 group-hover:bg-opacity-50 transition"></div>
+                <div className="absolute inset-0 bg-black opacity-80 hover:bg-opacity-50 transition duration-300"></div>
                 <div className="absolute bottom-0 p-5 z-10 text-white">
                   <h3 className="text-lg font-bold text-blue-400 mb-2">{service.title}</h3>
                   <p className="text-sm text-gray-300 mb-4">{service.desc}</p>

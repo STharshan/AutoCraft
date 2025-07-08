@@ -36,7 +36,7 @@ const AboutSection = () => {
           </button>
 
           {/* Testimonial */}
-          <div className="mt-10 text-sm text-gray-600">
+          <div className="mt-30 text-md text-gray-600">
             <p className="italic mb-2">
               "Fast delivery and outstanding results. Thank you!"
             </p>
@@ -46,23 +46,29 @@ const AboutSection = () => {
 
         {/* Right Image Side */}
         <div className="relative">
-          <div className="relative z-10">
-            <img
-              src="/green.webp"
-              alt="Spray Work"
-              className="rounded-sm w-full object-cover"
-            />
-          </div>
-          {/* Yellow corner border (bottom-right only) */}
-          <div className="absolute bottom-0 right-0 border-b-[12px] border-r-[12px] border-yellow-400 w-32 h-32 z-0"></div>
+  {/* Main image */}
+  <div className="relative z-10 rounded-lg shadow-lg">
+    <img
+      src="/green.webp"
+      alt="Spray Work"
+      className="w-full object-cover rounded-sm"
+    />
 
-          {/* Overlapping small image (bottom-left) */}
-          <img
-            src="/work.avif"
-            alt="Detail work"
-            className="absolute bottom-0 left-0 w-32 md:w-40 border-4 border-white shadow-md -mb-8 -ml-8 z-20"
-          />
-        </div>
+    {/* Right full border */}
+    <div className="absolute top-0 right-0 h-full w-[15px] bg-gradient-to-b from-transparent to-yellow-400"></div>
+
+    {/* Bottom fixed half-border */}
+    <div className="absolute bottom-0 left-0 w-full h-[15px] bg-gradient-to-r from-transparent to-yellow-400"></div>
+  </div>
+
+  {/* Overlapping small image */}
+  <img
+    src="/carmechanic.avif"
+    alt="Detail work"
+    className="absolute bottom-5 -left-5 w-32 md:w-30 h-30 z-20"
+  />
+</div>
+
       </div>
     </section>
   );
