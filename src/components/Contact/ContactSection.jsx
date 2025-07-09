@@ -77,12 +77,12 @@ const ContactSection = () => {
         {/* Contact Info */}
         <div className="text-sm text-gray-700 space-y-2">
           <div className="group flex justify-between items-center border-b border-gray-300 hover:border-yellow-300 cursor-pointer py-2 transition-all duration-300 transform hover:translate-x-1">
-            <span>Gags@nikitaautocraft.com</span>
-            <FaArrowRight className="text-gray-500 group-hover:translate-x-1 transition-transform duration-300" size={12} />
+            <span className="group-hover:translate-x-5.5 transition-transform duration-500 ">Gags@nikitaautocraft.com</span>
+            <FaArrowRight className="text-gray-500 group-hover:-translate-x-5.5 transition-transform duration-500" size={12} />
           </div>
           <div className="group flex justify-between items-center border-b border-gray-300 hover:border-yellow-300 cursor-pointer py-2 transition-all duration-300 transform hover:translate-x-1">
-            <span>0116 251 2277</span>
-            <FaArrowRight className="text-gray-500 group-hover:translate-x-1 transition-transform duration-300" size={12} />
+            <span className="group-hover:translate-x-5.5 transition-transform duration-500">0116 251 2277</span>
+            <FaArrowRight className="text-gray-500 group-hover:-translate-x-5.5 transition-transform duration-500" size={12} />
           </div>
         </div>
 

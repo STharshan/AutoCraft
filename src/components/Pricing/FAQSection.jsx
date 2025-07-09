@@ -52,7 +52,7 @@ const FAQSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className="lg:w-1/2 space-y-3">
+        <div className="lg:w-1/2 space-y-3 ">
           {faqs.map((faq, index) => (
             <div
               key={index}
@@ -60,9 +60,9 @@ const FAQSection = () => {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center bg-gray-50 hover:bg-gray-100 px-5 py-4 text-left"
+                className="w-full flex justify-between items-center bg-gray-50 hover:bg-gray-100 px-5 py-4 text-left cursor-pointer  "
               >
-                <span className="text-sm text-gray-800 font-medium">
+                <span className="text-sm text-gray-800 font-medium hover:translate-x-5.5 transition-transform duration-500">
                   {faq.question}
                 </span>
                 {activeIndex === index ? (

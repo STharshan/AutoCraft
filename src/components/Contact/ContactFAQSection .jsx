@@ -58,13 +58,13 @@ const FAQSection = () => {
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center bg-gray-50 hover:bg-gray-100 px-5 py-5 text-left"
+              className="w-full flex justify-between items-center bg-gray-50 hover:bg-gray-100 px-5 py-5 text-left cursor-pointer"
             >
-              <span className="text-sm text-gray-800 font-medium">
+              <span className="text-sm text-gray-800 font-medium hover:translate-x-5.5 transition-transform duration-500">
                 {faq.question}
               </span>
               {activeIndex === index ? (
-                <FaChevronUp className="text-gray-500 text-sm" />
+                <FaChevronUp className="text-gray-500 text-sm " />
               ) : (
                 <FaChevronDown className="text-gray-500 text-sm" />
               )}

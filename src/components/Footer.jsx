@@ -30,18 +30,18 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           {/* Email + Phone */}
           <div className="flex flex-col gap-2">
-            <div className="flex justify-between items-center border-b pb-1">
-              <span>Gags@nikitaautocraft.co.uk</span>
-              <FaArrowRight />
+            <div className="flex justify-between items-center border-b pb-1 group cursor-pointer hover:border-yellow-400 transition-all duration-200">
+              <span className="group-hover:translate-x-5.5 transition-transform duration-500">Gags@nikitaautocraft.co.uk</span>
+              <FaArrowRight className="group-hover:-translate-x-5.5 transition-transform duration-500" />
             </div>
-            <div className="flex justify-between items-center border-b pb-1">
-              <span>0116 251 2277</span>
-              <FaArrowRight />
+            <div className="flex justify-between items-center border-b pb-1 group cursor-pointer hover:border-yellow-400 transition-all duration-200">
+              <span className="group-hover:translate-x-5.5 transition-transform duration-500">0116 251 2277</span>
+              <FaArrowRight className="group-hover:-translate-x-5.5 transition-transform duration-500" />
             </div>
           </div>
 
           {/* Review */}
-          <div className="flex items-center gap-3 border-gray-300 border rounded-full px-6 py-2.5 w-fit self-center md:self-start">
+          <div className="flex flex-nowrap items-center gap-3 border-gray-300 border rounded-full px-6 py-2.5 w-fit self-center md:self-start whitespace-nowrap overflow-x-auto">
             <div className="flex text-yellow-400 text-sm">
               {[...Array(5)].map((_, i) => <FaStar key={i} />)}
             </div>
