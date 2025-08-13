@@ -10,16 +10,18 @@ import Contact from './pages/Contact';
 import PaintServices from './pages/ExtraServices/PaintServices';
 import ACServices from './pages/ExtraServices/ACServices';
 import MOT from './pages/ExtraServices/MOT';
-import Mechanical from './pages/ExtraServices/Mechanical.JSx';
+import Mechanical from './pages/ExtraServices/Mechanical.jsx';
 import Body from './pages/ExtraServices/Body';
 import BodyService from './pages/ExtraServices/BodyService';
 import Diagnostics from './pages/ExtraServices/Diagnostics';
 import Dents from './pages/ExtraServices/Dents';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
+        <ScrollToTop />
         <Navbar />
 
         <main className="flex-grow">
