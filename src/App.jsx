@@ -20,30 +20,25 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-        <ScrollToTop />
-        <Navbar />
-
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/services" element={<Service />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/services/paint-services" element={<PaintServices />} />
-            <Route path="/services/ac-service" element={<ACServices />} />
-            <Route path="/services/mot" element={<MOT />} />
-            <Route path="/services/mechanical-repairs" element={<Mechanical />} />
-            <Route path="/services/body-smart-repairs" element={<Body />} />
-            <Route path="/services/service" element={<BodyService />} />
-            <Route path="/services/diagnostics" element={<Diagnostics />} />
-            <Route path="/services/dent-repair" element={<Dents />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/services" element={<Service />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services/paint-services" element={<PaintServices />} />
+        <Route path="/services/ac-service" element={<ACServices />} />
+        <Route path="/services/mot" element={<MOT />} />
+        <Route path="/services/mechanical-repairs" element={<Mechanical />} />
+        <Route path="/services/body-smart-repairs" element={<Body />} />
+        <Route path="/services/service" element={<BodyService />} />
+        <Route path="/services/diagnostics" element={<Diagnostics />} />
+        <Route path="/services/dent-repair" element={<Dents />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 }
